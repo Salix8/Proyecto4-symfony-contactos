@@ -18,12 +18,16 @@ class Contacto
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255).
+     * @Assert\NotBlank
+     * (message="El nombre es obligatorio")
      */
     private $nombre;
 
     /**
      * @ORM\Column(type="string", length=15)
+     * @Assert\NotBlank
+     * (message="El nombre es obligatorio")
      */
     private $telefono;
 

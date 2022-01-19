@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactos{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body{
+            background-color: #1ff;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <h1>Nuevo contacto</h1>
+
+    {{ form(formulario) }}    
+
+{% endblock %}
